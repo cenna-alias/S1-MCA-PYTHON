@@ -1,3 +1,5 @@
+# Generate Fibonacci series up to n terms using a function.
+
 def fibonacci(n):
 	a,b = 0,1
 	for i in range(n):

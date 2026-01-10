@@ -1,3 +1,5 @@
+# Get the file extension from a given file name.
+
 file_name = input("Enter file name:")
 if '.' in file_name:
 	extension = file_name.split('.')[-1]

@@ -1,3 +1,5 @@
+# Swap the second characters of two strings.
+
 s1 = input("Enter first string:")
 s2 = input("Enter second string:")
 

@@ -1,3 +1,5 @@
+# Store a list of first names.Count the occurrence of letter 'a' in the list.
+
 names = input("Enter first names:").split()
 print(names)
 count = 0

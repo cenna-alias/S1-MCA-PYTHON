@@ -1,3 +1,5 @@
+# Replace all occurrences of first character of a string with '$', except the first character itself.
+
 text = input("Enter the string:")
 print(text)
 

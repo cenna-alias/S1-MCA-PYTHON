@@ -1,8 +1,13 @@
+# Compare two lists of integers and display the following:
+
+# a. Whether they are of same length
 list1 = [int(x) for x in input("Enter list of integers:").split()]
 print(list1)
 list2 = [int(x) for x in input("Enter list of integers:").split()]
 print(list2)
 
+
+# b. Whether they have same sum
 if len(list1) == len(list2):
 	print("Same length")
 else:
@@ -12,7 +17,9 @@ if sum(list1) == sum(list2):
 	print("Same sum",sum(list1))
 else:
 	print("Different sum list1:",sum(list1),"list2:",sum(list2))
+
 	
+# c. Whether they have common elements
 common_elements = set(list1).intersection(list2)
 if common_elements:
 	print("have same elements:",common_elements)
