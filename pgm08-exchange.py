@@ -1,2 +1,2 @@
-str=input("Enter string:")
-print(str[-1]+str[1:len(str)-1]+str[0])
+text = input("Enter string:")
+print(text[-1] + text[1:-1] + text[0])

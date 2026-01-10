@@ -1,6 +1,6 @@
-str=input("Enter the string:")
-print(str)
+text = input("Enter the string:")
+print(text)
 
-first_char = str[0]
-result = first_char + str[1:].replace(first_char,'$')
+first_char = text[0]
+result = first_char + text[1:].replace(first_char,'$')
 print(result)

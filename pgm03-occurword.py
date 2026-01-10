@@ -1,7 +1,7 @@
-str = input("Enter the string:")
-print(str)
+text = input("Enter the string:")
+print(text)
 c = dict()
-words = str.split()
+words = text.split()
 for i in words:
 	if i in c:
 		c[i]=c[i]+1

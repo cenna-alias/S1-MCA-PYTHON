@@ -1,21 +1,21 @@
-numbers=[1,2,-34,34,56,100,-35]
+numbers=[1, 2, -34, 34, 56, 100, -35]
 for i in numbers:
-	if i>0:
+	if i > 0:
 		print(i)
-		
-		
-numbers=[1,2,3,4,5,6]
+
+
+numbers=[1, 2, 3, 4, 5, 6]
 for i in numbers:
-	print(i*i)
+	print(i * i)
 	
 	
-str="Master of Computer Applications"
-vowel=[]
-vowels="aeiouAEIOU"
-for i in str:
+text = "Master of Computer Applications"
+vowel_list = []
+vowels = "aeiouAEIOU"
+for i in text:
 	if i in vowels:
-		vowel.append(i)
-print(vowel)
+		vowel_list.append(i)
+print(vowel_list)
 
 
 print(ord('1'))
