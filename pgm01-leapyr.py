@@ -1,18 +1,10 @@
-# Display future leap years from current year to a final year entered by user.
+# Display future leap years from current year to a final year entered by user. 
 
-# Using while loop
+from datetime import date
 
-start = int(input("Enter start year:"))
-end = int(input("Enter end year:"))
-while start <= end:
-    if (start % 400 == 0) or (start % 4 == 0 and start % 100 != 0):
-        print(start)
-    start += 1
+current_year = date.today().year
+end = int(input("Enter final year: "))
 
-# Using for loop
-
-start = int(input("Enter start year:"))
-end = int(input("Enter end year:"))
-for year in range(start, end + 1):
+for year in range(current_year, end + 1):
     if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
         print(year)

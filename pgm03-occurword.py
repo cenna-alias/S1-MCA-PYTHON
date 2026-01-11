@@ -1,12 +1,10 @@
-# Count the occurrence of each word in a line of text.
+# Count the occurrences of each word in a line of text. 
 
-text = input("Enter the string:")
-print(text)
-c = dict()
+text = input("Enter the string: ")
 words = text.split()
-for i in words:
-	if i in c:
-		c[i] = c[i]+1
-	else:
-		c[i] = 1
-print(c)
+
+word_count = {}
+for word in words:
+    word_count[word] = word_count.get(word, 0) + 1
+
+print(word_count)

@@ -1,27 +1,25 @@
-# Compare two lists of integers and display the following:
+# Enter 2 lists of integers. Check (a) Whether list are of same length (b) whether list sums
+# to same value (c) whether any value occur in both 
 
-# a. Whether they are of same length
-list1 = [int(x) for x in input("Enter list of integers:").split()]
-print(list1)
-list2 = [int(x) for x in input("Enter list of integers:").split()]
-print(list2)
+# Input two lists
+list1 = [int(x) for x in input("Enter first list of integers: ").split()]
+list2 = [int(x) for x in input("Enter second list of integers: ").split()]
 
-
-# b. Whether they have same sum
+# a. Check if lists are of same length
 if len(list1) == len(list2):
-	print("Same length")
+    print("Lists are of same length")
 else:
-	print("Not the same length")
+    print("Lists are of different length")
 
+# b. Check if lists have same sum
 if sum(list1) == sum(list2):
-	print("Same sum",sum(list1))
+    print("Lists have same sum:", sum(list1))
 else:
-	print("Different sum list1:",sum(list1),"list2:",sum(list2))
+    print("Lists have different sums. List1:", sum(list1), "List2:", sum(list2))
 
-	
-# c. Whether they have common elements
+# c. Check if lists have common elements
 common_elements = set(list1).intersection(list2)
 if common_elements:
-	print("have same elements:",common_elements)
+    print("Common elements:", common_elements)
 else:
-	print("don't have same elements")
+    print("No common elements")

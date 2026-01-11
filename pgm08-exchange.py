@@ -1,4 +1,9 @@
-# Exchange first and last characters of a string.
+# Exchange first and last characters of a string
+text = input("Enter string: ")
 
-text = input("Enter string:")
-print(text[-1] + text[1:-1] + text[0])
+if len(text) > 1:
+    result = text[-1] + text[1:-1] + text[0]
+else:
+    result = text  # if only one character, keep it as is
+
+print("Modified string:", result)

@@ -1,25 +1,22 @@
-# To perform list manipulations using python list comprehensions and built-in functions.
+# List comprehensions:
+# (a) Generate positive list of numbers from a given list of integers
+# (b) Square of N numbers
+# (c) Form a list of vowels selected from a given word
+# (d) List ordinal value of each element of a word (Hint: use ord() to get ordinal values)
 
-# generate positive list of numbers from a given list of integers
 numbers = [1, 2, -34, 34, 56, 100, -35]
-for i in numbers:
-	if i > 0:
-		print(i)
+positive_list = [i for i in numbers if i > 0]
+print(positive_list)
 
-# square of n numbers
 numbers = [1, 2, 3, 4, 5, 6]
-for i in numbers:
-	print(i * i)
-	
-# form a list of vowels selected from a given text	
+square_list = [i * i for i in numbers]
+print(square_list)
+
 text = "Master of Computer Applications"
-vowel_list = []
 vowels = "aeiouAEIOU"
-for i in text:
-	if i in vowels:
-		vowel_list.append(i)
+vowel_list = [i for i in text if i in vowels]
 print(vowel_list)
 
-# list ordinal value of each element
-print(ord('1'))
-print(ord('0'))
+word = "MCA"
+ordinal_list = [ord(i) for i in word]
+print(ordinal_list)
