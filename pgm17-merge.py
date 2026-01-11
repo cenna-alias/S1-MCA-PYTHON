@@ -1,8 +1,6 @@
-# Merge two dictionaries into a new dictionary.
+# Merge two dictionaries
+d1 = {"a": 1, "b": 2}
+d2 = {"c": 3, "d": 4}
 
-d1 = {"a":1,"b":2}
-d2 = {"c":3,"d":4}
-print(d1)
-print(d2)
-merged = {**d1,**d2}
-print("Merged dictionary:",merged)
+merged = {**d1, **d2}
+print("Merged dictionary:", merged)
